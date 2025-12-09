@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment form example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+
+<div class="container my-5">
+    <div class="card shadow-lg">
+        <div class="card-header  text-black">
+            <h2 class="mb-0">Payment form example</h2>
+        </div>
+        <div class="card-body">
+            
+            <div class="alert alert-danger" role="alert">
+                <strong>Some fields are missing</strong>
+            </div>
+
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-5">
+                        <label for="card-number" class="form-label">Card #</label>
+                        <input type="text" class="form-control" id="card-number" value="XXXXXXXXXXXXXX" placeholder="Card number">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="cvc-number" class="form-label">CVC #</label>
+                        <input type="text" class="form-control" id="cvc-number" value="0000" placeholder="CVC">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="amount" class="form-label">Amount</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" id="amount" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="state" class="form-label">State</label>
+                        <select id="state" class="form-select">
+                            <option selected>Pick a state</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="postal-code" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postal-code" placeholder="Postal Code">
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">We accept:</label>
+                        <div class="d-flex align-items-center">
+                            <span class="border rounded px-2 py-1 me-2 text-muted">💳</span>
+                            <span class="border rounded px-2 py-1 me-2 text-muted">💵</span>
+                            <span class="border rounded px-2 py-1 me-2 text-muted">🅿️</span>
+                            <span class="border rounded px-2 py-1 me-2 text-muted">🏦</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Add any notes here."></textarea>
+                    </div>
+                </div>
+
+                <hr class="border border-success border-2 opacity-75">
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
